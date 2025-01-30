@@ -13,6 +13,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
 rootProject.name = "Runique"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
