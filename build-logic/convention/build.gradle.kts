@@ -35,5 +35,17 @@ gradlePlugin {
             id = "runique.android.feature.ui"
             implementationClass = "AndroidFeatureUIConventionPlugin"
         }
+        register("androidRoom") {
+            id = "runique.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
+        register("androidJvm") {
+            id = "runique.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
+        register("jvmKtor") {
+            id = "runique.jvm.ktor"
+            implementationClass = "JvmKtorConventionPlugin"
+        }
     }
 }
