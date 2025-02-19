@@ -1,6 +1,6 @@
-package com.plcoding.core.domain.util;
+package com.plcoding.core.domain.util
 
-sealed interface DataError:Error {
+sealed interface DataError: Error {
     enum class Network: DataError {
         REQUEST_TIMEOUT,
         UNAUTHORIZED,

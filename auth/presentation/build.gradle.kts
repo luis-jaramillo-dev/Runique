@@ -4,8 +4,6 @@ plugins {
 
 android {
     namespace = "com.plcoding.auth.presentation"
-
-
 }
 
 dependencies {

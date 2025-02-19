@@ -1,4 +1,4 @@
-import com.android.build.gradle.LibraryExtension
+import com.android.build.api.dsl.LibraryExtension
 import com.plcoding.convention.ExtensionType
 import com.plcoding.convention.configureBuildTypes
 import com.plcoding.convention.configureKotlinAndroid
@@ -14,6 +14,7 @@ class JvmLibraryConventionPlugin: Plugin<Project> {
     override fun apply(target: Project) {
         target.run {
             pluginManager.apply("org.jetbrains.kotlin.jvm")
+
             configureKotlinJvm()
         }
     }

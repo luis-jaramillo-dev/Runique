@@ -1,4 +1,4 @@
-import com.android.build.gradle.LibraryExtension
+import com.android.build.api.dsl.LibraryExtension
 import com.plcoding.convention.ExtensionType
 import com.plcoding.convention.configureBuildTypes
 import com.plcoding.convention.configureKotlinAndroid
@@ -16,17 +16,21 @@ class AndroidLibraryConventionPlugin: Plugin<Project> {
                 apply("com.android.library")
                 apply("org.jetbrains.kotlin.android")
             }
+
             extensions.configure<LibraryExtension> {
-               configureKotlinAndroid(this)
+                configureKotlinAndroid(this)
+
                 configureBuildTypes(
                     commonExtension = this,
                     extensionType = ExtensionType.LIBRARY
                 )
+
                 defaultConfig {
                     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
                     consumerProguardFiles("consumer-rules.pro")
                 }
             }
+
             dependencies {
                 "testImplementation"(kotlin("test"))
             }

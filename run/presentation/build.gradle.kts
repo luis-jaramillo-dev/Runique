@@ -4,7 +4,6 @@ plugins {
 
 android {
     namespace = "com.plcoding.run.presentation"
-
 }
 
 dependencies {
@@ -12,6 +11,7 @@ dependencies {
     implementation(libs.google.maps.android.compose)
     implementation(libs.androidx.activity.compose)
     implementation(libs.timber)
+
     implementation(projects.core.domain)
     implementation(projects.run.domain)
 }
