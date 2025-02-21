@@ -33,7 +33,7 @@ gradlePlugin {
         }
         register("androidFeatureUi") {
             id = "runique.android.feature.ui"
-            implementationClass = "AndroidFeatureUiConventionPlugin"
+            implementationClass = "AndroidFeatureUIConventionPlugin"
         }
         register("androidRoom") {
             id = "runique.android.room"
