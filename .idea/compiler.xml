@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="Runique.analytics.analytics_feature" target="21" />
+      <module name="Runique.analytics.data" target="21" />
+      <module name="Runique.analytics.presentation" target="21" />
+      <module name="Runique.core.connectivity.data" target="21" />
+      <module name="Runique.core.notification" target="21" />
+      <module name="Runique.core.presentation.designsystem_wear" target="21" />
+      <module name="Runique.wear.app" target="21" />
+      <module name="Runique.wear.run.data" target="21" />
+      <module name="Runique.wear.run.presentation" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
