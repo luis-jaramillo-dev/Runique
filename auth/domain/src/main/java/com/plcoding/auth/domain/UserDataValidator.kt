@@ -3,6 +3,7 @@ package com.plcoding.auth.domain
 class UserDataValidator(
     private val patternValidator: PatternValidator
 ) {
+
     fun isValidEmail(email: String): Boolean {
         return patternValidator.matches(email.trim())
     }
@@ -12,11 +13,12 @@ class UserDataValidator(
         val hasDigit = password.any { it.isDigit() }
         val hasLowerCaseCharacter = password.any { it.isLowerCase() }
         val hasUpperCaseCharacter = password.any { it.isUpperCase() }
+
         return PasswordValidationState(
-            hasMinLength,
-            hasDigit,
-            hasLowerCaseCharacter,
-            hasUpperCaseCharacter
+            hasMinLength = hasMinLength,
+            hasNumber = hasDigit,
+            hasLowerCaseCharacter = hasLowerCaseCharacter,
+            hasUpperCaseCharacter = hasUpperCaseCharacter
         )
     }
 
