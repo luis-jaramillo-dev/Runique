@@ -61,17 +61,19 @@ private fun ActiveRunScreen(
                 )
             )
         }
-    ) {
-        padding ->
+    ) { padding ->
         Box(
             modifier = Modifier
                 .fillMaxSize()
                 .background(MaterialTheme.colorScheme.surface)
-        ){
+        ) {
             RunDataCard(
                 elapsedTime = state.elapsedTime,
                 runData = state.runData,
-                modifier = Modifier.padding(16.dp).padding(padding).fillMaxWidth()
+                modifier = Modifier
+                    .padding(16.dp)
+                    .padding(padding)
+                    .fillMaxWidth()
             )
         }
 
